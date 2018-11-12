@@ -23,6 +23,12 @@ so we will have a queue for chat and a queue for messages
     - before running please make sure that you have redis, rabbitmq and mysql disabled on your device 
     - docker-compose build
     - docker-compose up
+    - open two terminals
+    - docker ps and get web container id
+    - open two terminals and run the following
+    - docker exec -it {container_id} bash 
+    - in one terminal run `ruby app/workers/chats_worker.rb`
+    - in other terminal run `app/workers/messages_worker.rb`
 
 ---------------------------------
 
