@@ -28,7 +28,7 @@ so we will have a queue for chat and a queue for messages
     - open two terminals and run the following
     - docker exec -it {container_id} bash 
     - in one terminal run `ruby app/workers/chats_worker.rb`
-    - in other terminal run `app/workers/messages_worker.rb`
+    - in other terminal run `ruby app/workers/messages_worker.rb`
 
 ---------------------------------
 
