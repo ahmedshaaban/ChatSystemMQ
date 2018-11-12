@@ -14,7 +14,7 @@ so we will have a queue for chat and a queue for messages
     - ruby 2.5.1p57
 
 * System dependencies
-    - Mysql (PostgreSQL) 5.7.24
+    - Mysql 5.7.24
     - Rails 5.2.1
     - RabbitMQ
     - Redis
