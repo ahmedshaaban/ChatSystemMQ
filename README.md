@@ -20,6 +20,7 @@ so we will have a queue for chat and a queue for messages
     - Redis
 
 * How to run the docker-compose
+    - before running please make sure that you have redis, rabbitmq and mysql disabled on your device 
     - docker-compose build
     - docker-compose up
 
