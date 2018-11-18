@@ -1,0 +1,57 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Start Rails server",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "server",
+                "-p",
+                "3000"
+            ]
+        },
+        {
+            "name": "Debug Rails server",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "useBundler": true,
+            "pathToBundler": "/usr/share/rvm/rubies/ruby-2.5.1/bin/bundle",
+            "pathToRDebugIDE": "/home/ahmed/.rvm/gems/ruby-2.5.1/gems/ruby-debug-ide-0.6.1/bin/rdebug-ide",
+            "program": "${workspaceRoot}/bin/rails",
+            "args": [
+                "server",
+                "-p",
+                "3000"
+            ]
+        },
+        {
+            "name": "Run RSpec - all",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "/home/ahmed/.rvm/gems/ruby-2.5.1/bin/rspec",
+            "args": [
+                "--pattern",
+                "${workspaceRoot}/spec/**/*_rspec.rb"
+            ]
+        },
+        {
+            "name": "Debug RSpec - open spec file",
+            "type": "Ruby",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "useBundler": true,
+            "pathToBundler": "/usr/share/rvm/rubies/ruby-2.5.1/wrappers/bundle",
+            "pathToRDebugIDE": "/home/ahmed/.rvm/gems/ruby-2.5.1/gems/ruby-debug-ide-0.6.1/bin/rdebug-ide",
+            "debuggerPort": "1235",
+            "program": "/home/ahmed/.rvm/gems/ruby-2.5.1/bin/rspec",
+            "args": [
+                "${file}"
+            ]
+        }
+    ]
+}
